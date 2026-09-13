@@ -1,0 +1,20 @@
+{
+  "info": {
+    "name": "Productos API",
+    "description": "Coleccion de pruebas para la API de productos (Express + Node.js)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "base_url", "value": "http://localhost:3000" }
+  ],
+  "item": [
+    { "name": "Guia de endpoints", "request": { "method": "GET", "url": "{{base_url}}/" } },
+    { "name": "Listar productos", "request": { "method": "GET", "url": "{{base_url}}/api/productos" } },
+    { "name": "Productos caros (>100.000)", "request": { "method": "GET", "url": "{{base_url}}/api/productos/caros" } },
+    { "name": "Valor total del inventario", "request": { "method": "GET", "url": "{{base_url}}/api/productos/valor-total" } },
+    { "name": "Producto con mayor stock", "request": { "method": "GET", "url": "{{base_url}}/api/productos/mayor-stock" } },
+    { "name": "Productos de Tecnologia", "request": { "method": "GET", "url": "{{base_url}}/api/productos/tecnologia" } },
+    { "name": "Cantidad por categoria", "request": { "method": "GET", "url": "{{base_url}}/api/productos/por-categoria" } },
+    { "name": "Buscar producto por id", "request": { "method": "GET", "url": "{{base_url}}/api/productos/3" } }
+  ]
+}
